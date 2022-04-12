@@ -36,30 +36,121 @@
 </header>
 
 <div class="content-container">
-<main><h1 id="hugo-techdoc-theme">Hugo Techdoc Theme</h1>
-<h2 id="the-techdoc-is-a-hugo-theme-for-technical-documentation">The Techdoc is a Hugo Theme for technical documentation.</h2>
+<main><!-- # Hugo Techdoc Theme
+
+## The Techdoc is a Hugo Theme for technical documentation. -->
+<h1 id="xprss">XPRSS</h1>
+<h2 id="a-fast-unopinionated-minimalist-web-framework-for-php">A fast, unopinionated, minimalist web framework for PHP.</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>
+<p>fast</p>
+</li>
+<li>
+<p>unopinionated</p>
+</li>
+<li>
+<p>minimalist</p>
+</li>
+<li>
+<p>simple architecture (gives you structure but doesn&rsquo;t get in your way)</p>
+</li>
+<li>
+<p>api that doesn&rsquo;t change (we may add to it and change stuff for security, but for the most part this is always* going to work)</p>
+</li>
+<li>
+<p>routing</p>
+</li>
+<li>
+<p>cookies?</p>
+</li>
+<li>
+<p>middleware base - add modular functionality (templating, cors, jwt, etc) w/ middleware!</p>
+</li>
+</ul>
+<!-- * Modern, Simple layout
+* Responsive web design
+* Documentation menu (Select [Menu style](getting-started/screenshot/#menu-style))
+* [Table Of Contents](sample/table-of-contents/) for the page (selective)
+* [Theme color](getting-started/screenshot/#theme-color)
+* [Edit link](getting-started/screenshot/#edit-link) to documentation repository
+* [Custom Shortcodes](sample/custom-shortcodes/)
+  * Code highlight with clipboard
+  * Alert panel
+  * Button
+* [Search Shortcode](sample/search-shortcode/) powered by [Algolia](https://www.algolia.com/)
+* Open Graph
+* Analytics with Google Analytics, Google Tag Manager -->
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>apache (min version) / NGINX (min version?)</li>
+<li>php 7 (or greater)</li>
+</ul>
 <h3 id="installation">Installation</h3>
 <pre tabindex="0"><code>composer require hxgf/xprss
-</code></pre><h3 id="features">Features</h3>
+</code></pre><h3 id="setup--quick-start--getting-started">setup / quick start / getting started</h3>
 <ul>
-<li>Modern, Simple layout</li>
-<li>Responsive web design</li>
-<li>Documentation menu (Select <a href="getting-started/screenshot/#menu-style">Menu style</a>)</li>
-<li><a href="sample/table-of-contents/">Table Of Contents</a> for the page (selective)</li>
-<li><a href="getting-started/screenshot/#theme-color">Theme color</a></li>
-<li><a href="getting-started/screenshot/#edit-link">Edit link</a> to documentation repository</li>
-<li><a href="sample/custom-shortcodes/">Custom Shortcodes</a>
+<li>for apache
 <ul>
-<li>Code highlight with clipboard</li>
-<li>Alert panel</li>
-<li>Button</li>
+<li>copy  htaccess</li>
 </ul>
 </li>
-<li><a href="sample/search-shortcode/">Search Shortcode</a> powered by <a href="https://www.algolia.com/">Algolia</a></li>
-<li>Open Graph</li>
-<li>Analytics with Google Analytics, Google Tag Manager</li>
+<li>for nginx
+<ul>
+<li>copy this code into your conf (or copy contents of nginx.conf file)</li>
 </ul>
-<nav class="pagination"><a class="nav nav-next" href="https://xprss.dev/getting-started/" title="Getting Started">Next - Getting Started <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</li>
+<li>copy contents of demo into index.php (to verify it&rsquo;s working and check out some basic stuff you can do)</li>
+<li>do any initial setup (add middleware, config vars, set up templating)</li>
+<li>the rest is up to you!
+<ul>
+<li>structure your application how you desire</li>
+<li>organize it however you want (we recommend simple folders for css, images, templates, js, etc)</li>
+</ul>
+</li>
+</ul>
+<!-- 
+- expressjs docs structure (for ref)
+    - home
+    - getting started
+        - installing
+        - hello world
+        - basic routing
+        - static files
+        - more examples
+        - faq
+    - guide
+        - routing
+        - using middleware
+        - writing middleware
+        - overriding the express api
+        - using template engines
+        - error handling
+        - debugging
+        - express behind proxies
+        - moving to express 4/5
+        - database integration
+    - api reference
+        - 5/4/3/2
+    - advanced topics
+        - template engines
+        - process managers
+        - security updates
+        - security best practices
+        - performance best practices
+        - health checks and graceful shutdown
+    - resources
+        - community
+        - glossary
+        - template engines
+        - middleware
+        - utility modules
+        - frameworks
+        - companies using express
+        - ope-source projects
+        - additional learning
+        - contributing to express
+        - release change log --><nav class="pagination"><a class="nav nav-next" href="https://xprss.dev/getting-started/" title="Getting Started">Next - Getting Started <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><div class="edit-meta">
 Last updated on 26 Oct 2019
 
